@@ -31,3 +31,5 @@ desktop.ini
 *.log
 runs/
 lightning_logs/
+/data/val
+/data/train
