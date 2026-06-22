@@ -82,16 +82,6 @@ def get_data_loaders(data_dir, batch_size=32, num_workers=0):
     train_dataset = ImageDataset(train_dir, transform=TRANSFORM_TRAIN)
     val_dataset = ImageDataset(val_dir, transform=TRANSFORM_VAL)
 
-    print(f'Train images loaded: {len(train_dataset)}')
-    print(f'Val images loaded:   {len(val_dataset)}')
-
-    # Per-class counts
-    from collections import Counter
-    train_counts = Counter(label for _, label in train_dataset.samples)
-    val_counts   = Counter(label for _, label in val_dataset.samples)
-    for idx, name in IDX_TO_CLASS.items():
-        print(f'  {name}: train={train_counts[idx]}  val={val_counts[idx]}')
-
     train_loader = DataLoader(
         train_dataset,
         batch_size=batch_size,
