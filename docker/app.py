@@ -11,8 +11,8 @@ from PIL import Image
 import streamlit as st
 
 # ── Config ──────────────────────────────────────────────────────────────────
-MODEL_PATH   = Path('model/efficientnet_b0_best.pth')
-CLASSES_PATH = Path('model/classes.json')
+MODEL_PATH   = Path(__file__).parent / 'model' / 'efficientnet_b0_best.pth'
+CLASSES_PATH = Path(__file__).parent / 'model' / 'classes.json'
 CONFIDENCE_THRESHOLD = 0.50
 
 CLASS_ICONS = {
