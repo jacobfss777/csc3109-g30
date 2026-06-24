@@ -103,10 +103,20 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown('<div class="main-header"><h1>🛰️ Aerial Image Classifier</h1></div>',
+st.markdown('<div class="main-header"><h1>🛰️ Team 30 — Aerial Image Classifier</h1></div>',
             unsafe_allow_html=True)
-st.markdown('<div class="sub-header">CSC3109 Machine Learning &nbsp;|&nbsp; Group 30 '
-            '&nbsp;|&nbsp; EfficientNet-B0</div>', unsafe_allow_html=True)
+st.markdown("""
+<div class="sub-header">
+    CSC3109 Machine Learning &nbsp;|&nbsp; EfficientNet-B0<br>
+    <span style="font-size:0.85rem; color:#607d8b;">
+        FOO SWAN SEN JACOB &nbsp;&bull;&nbsp;
+        NG KIAN HAO ERIC &nbsp;&bull;&nbsp;
+        CHUE ZEN WHYE &nbsp;&bull;&nbsp;
+        TEO ZHI KAI &nbsp;&bull;&nbsp;
+        CHUA LENTI
+    </span>
+</div>
+""", unsafe_allow_html=True)
 
 # ── Load model ───────────────────────────────────────────────────────────────
 with st.spinner('Loading model...'):
