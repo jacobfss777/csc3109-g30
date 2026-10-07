@@ -269,18 +269,6 @@ All models are evaluated on the held-out validation set using:
 
 ---
 
-## Team
-
-| Member | Responsibility |
-|--------|---------------|
-| Jacob  | Project lead, Custom CNN (Approach 1) |
-| TBD    | ResNet-50 Feature Extraction (Approach 2) |
-| TBD    | ResNet-50 Fine-Tuning (Approach 3) |
-| TBD    | EfficientNet-B0 (Approach 4) + Docker |
-| TBD    | Vision Transformer (Approach 5) + Report |
-
----
-
 ## Submission
 
 - **Deadline:** Sunday, 26 July 2026, 23:59 (local time)
